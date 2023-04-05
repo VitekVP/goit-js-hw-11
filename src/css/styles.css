@@ -48,14 +48,15 @@ a {
 
 .search-form input {
   width: 400px;
-  height: 30px;
+  height: 40px;
   padding: 1px 2px 1px 10px;
 
   font: inherit;
+  font-size: 18px;
 }
 button {
   width: 120px;
-  height: 30px;
+  height: 40px;
   padding: 0;
 
   display: flex;
@@ -63,8 +64,9 @@ button {
   align-items: center;
 
   border: none;
-  border-radius: 4px;
-  background-color: #1db61d;
+  border-radius: 45px;
+  background-color: #34ce98;
+  box-shadow: 0 8px 15px #0000001a;
 
   font: inherit;
   font-size: 14px;
@@ -73,7 +75,8 @@ button {
   text-transform: uppercase;
 
   cursor: pointer;
-  transition: background-color 250ms linear;
+  /* transform: translateY(0px); */
+  transition: 250ms linear;
 }
 
 .load-more {
@@ -84,9 +87,11 @@ button {
   display: none;
 }
 
-button:hover,
-button:focus {
-  background-color: #32da32;
+button:hover {
+  background: #2ee59d;
+  box-shadow: 0 15px 20px #2ee59d66;
+  color: white;
+  transform: translateY(-7px);
 }
 
 .gallery {
